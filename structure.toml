@@ -1,0 +1,19 @@
+[project]
+name = "silent-auction-app"
+
+[folders]
+backend = ["cmd/auction-server", "internal/auction", "internal/user", "internal/websocket", "internal/db", "internal/config", "pkg/logger", "migrations", "test"]
+frontend = ["public", "src/assets", "src/components", "src/pages", "src/services", "src/hooks"]
+database = ["."]
+deployments = ["."]
+docs = ["."]
+root = ["."]
+
+[files]
+backend = ["go.mod", "go.sum", "Dockerfile"]
+frontend = ["package.json", ".env"]
+database = ["schema.sql"]
+deployments = ["docker-compose.yml", "fly.toml", "vercel.json"]
+docs = ["architecture.md", "api-spec.md", "README.md"]
+root = [".gitignore", "README.md", "LICENSE"]
+
